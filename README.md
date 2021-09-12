@@ -1,5 +1,6 @@
 # README
 
+
 # users テーブル
 
 | Column             | Type       | Options     |
@@ -38,6 +39,8 @@
 
 - belong_to :user
 - belong_to :post
+
+
 
 
 
