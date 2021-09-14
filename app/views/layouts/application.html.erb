@@ -10,6 +10,15 @@
   </head>
 
   <body>
+   <header class="header">
+     <div class="header_bar">
+       <h1 class="grid-6"><a href="/">あなたのイチオシスポット</a></h1>
+     </div>
+     <div class="log_right" %>
+       <%= link_to "ログイン", class: :log_btn %>
+       <%= link_to "新規登録", class: :log_btn %>
+     </div>
+    </header>
     <%= yield %>
   </body>
 </html>
