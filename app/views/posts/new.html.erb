@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>情報を入力してください</h2>
+    <%= form_with(model: @post, local: true) do |f| %>
+      <div class="posts-main">
+        スポット名
+      </div>
+      <%= f.text_field :title, class:"posts-name", placeholder: "titleをお書きください" %>
+      <div class="">
+
+      <%= f.file_field :image, class:"posts-name", placeholder: "お気に入りの画像を添付お願い致します" %>
+      <%= f.text_area :content, class:"posts-name", placeholder: "このスポットの良さ・一押しポイントなどご自由にお書きください" %>
+      <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+      <%= f.submit "投稿する" %>
+    
+      </div>
+
+    <% end %>
+</div>
