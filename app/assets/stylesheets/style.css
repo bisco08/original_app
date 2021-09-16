@@ -1,3 +1,5 @@
+
+
 .header {
   display: flex;
   margin-bottom: 40px;
@@ -9,4 +11,47 @@
 .grid-6 {
   color: rgb(199, 33, 33);
   
+}
+
+.main {
+  position: absolute;
+  background-image: url(../images/mountain_image.png); 
+  background-size: cover;                 
+  width:100%;
+  height:700px;    
+  background-position:30% 60%;
+}
+
+.second {
+  font-size: 40px;
+  color: rgb(235, 235, 241);
+  text-align: center
+}
+
+.second_letter {
+  font-size: 25px;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.spot {
+  font-size: 45px;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.spot_btn {
+  text-decoration: none;
+  color: rgb(240, 206, 213);
+}
+
+.img_taka {
+  width: 50px;
+	height: 40px;
 }
