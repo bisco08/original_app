@@ -4,12 +4,19 @@ class PostsController < ApplicationController
     @post = Post.all
   end
 
+  def index2
+  end
+
   def new
     @post = Post.new
   end
 
   def create
     @post = Post.create(post_params)
+  end
+
+  def show
+    @post = Post.all
   end
 
   private
