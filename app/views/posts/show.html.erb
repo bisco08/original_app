@@ -8,7 +8,10 @@
     <%= image_tag @post.image %>
       <ul class="more_list">
         <li>
-          <%= link_to '編集', edit_post_path(@post.id), method: :get %>
+          <%= link_to '編集', edit_post_path(@post.id), method: :get, class: :post_btn %>
+        </li>
+        <li>
+          <%= link_to '削除', post_path(@post.id), method: :delete, class: :post_btn %>
         </li>
       </ul>
   </div>
