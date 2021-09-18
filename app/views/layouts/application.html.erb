@@ -14,10 +14,17 @@
      <div class="header_bar">
        <h1 class="grid-6"><a href="/">あなたの隠れおすすめスポット！</a></h1>
      </div>
-     <div class="log_right" %>
-       <%= link_to "ログイン", class: :log_btn %>
-       <%= link_to "新規登録", class: :log_btn %>
-     </div>
+     <% if user_signed_in? %>
+       <div class="log_right">
+         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :log_btn %>
+         <%= link_to "新規投稿", new_post_path, class: :log_btn %>
+       </div>
+     <% else %>
+       <div class="log_right" %>
+         <%= link_to "ログイン", new_user_session_path, class: :log_btn %>
+         <%= link_to "新規登録", new_user_registration_path, class: :log_btn %>
+       </div>
+     <% end %>
     </header>
     <%= yield %>
    
