@@ -1,5 +1,20 @@
-<% @post.each do |post| %>
-  <div class='post-img-content'>
-    <%= image_tag post.image, class: "post-img" %>
-    
-<% end %>
+<div class="detail_main">
+  <div class="detail_body">
+    <%= @post.title %>
+  </div>
+</div>
+<div class="detail_main">
+  <div class="detail_image">
+    <%= image_tag @post.image %>
+  </div>
+</div>
+<div class="detail_main">
+  <div class="detail_summary">
+    <%= @post.content %>
+  </div>
+</div>
+<div class="detail_main">
+  <div class="detail_user">
+    <%= link_to "by #{@post.user.nickname}" %>
+  </div>
+</div>

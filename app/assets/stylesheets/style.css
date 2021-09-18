@@ -56,8 +56,7 @@
 	height: 40px;
 }
 .post_main {
-  display: inline-block;
-  
+  background-color: blue;
 }
 
 .post_body {
