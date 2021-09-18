@@ -6,6 +6,11 @@
 <div class="detail_main">
   <div class="detail_image">
     <%= image_tag @post.image %>
+      <ul class="more_list">
+        <li>
+          <%= link_to '編集', edit_post_path(@post.id), method: :get %>
+        </li>
+      </ul>
   </div>
 </div>
 <div class="detail_main">
