@@ -74,3 +74,96 @@
   padding: 0;
 }
 
+.new_main {
+  background-image: url(../images/ccc_image.png); 
+  background-size: cover;                 
+  width:100%;
+  height:700px;    
+  background-position:20% 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.new_second {
+  background-color: aqua;
+}
+
+.field {
+  margin-top: 15px; 
+}
+
+.new_nickname {
+  margin-left: 30px;
+  color: black;
+  font-size: large;
+  font-weight: 900;
+  
+}
+
+.new_nickname_sub {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: black;
+  background: rgb(250, 216, 153);
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
+
+.new_email {
+  margin-left: 30px;
+  color: black;
+  font-size: large;
+  font-weight: 900;
+}
+
+.new_email_sub {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: black;
+  background: rgb(250, 216, 153);
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
+
+.new_password {
+  margin-left: 30px;
+  color: black;
+  font-size: large;
+  font-weight: 900;
+}
+
+.new_password_sub {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: black;
+  background: rgb(250, 216, 153);
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
+
+.new_confirmation {
+  margin-left: 30px;
+  color: black;
+  font-size: large;
+  font-weight: 900;
+}
+
+.new_confirmation_sub {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: black;
+  background: rgb(250, 216, 153);
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
+
+.actions {
+  padding-left: 70px;
+  
+}
+
+.registration {
+  padding-left: 30px;
+  font-size: large;
+  color: rgb(112, 227, 231);
+}
