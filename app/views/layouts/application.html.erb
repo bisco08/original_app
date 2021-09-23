@@ -12,7 +12,7 @@
   <body>
    <header class="header">
      <div class="header_bar">
-       <h1 class="grid-6"><a href="/">あなたの隠れおすすめスポット！</a></h1>
+       <h1 class="grid-6"><a href="/", class="header_btn">あなたの隠れおすすめスポット！ </a></h1>
      </div>
      <% if user_signed_in? %>
        <div class="log_right">
@@ -27,6 +27,11 @@
      <% end %>
     </header>
     <%= yield %>
+    <footer>
+      <div class="footer_bar">
+        閲覧ありがとうございます！  
+      </div>
+    </footer>
    
   </body>
 </html>

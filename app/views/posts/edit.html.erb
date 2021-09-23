@@ -1,26 +1,27 @@
 <div class="edit_content">
-  <div class="edit_container">
+  <%= form_with(model: @post, local: true) do |post| %>
     <div class="edit_con">
-      <h2>編集する</h2>
+      <h1>編集</h1><br>
     </div>
-    <%= form_with(model: @post, local: true) do |post| %>
-    <div class="edit_content">
+    <div class="edit_con">
       <div class="edit_title">
-        <%= post.text_field :title, class: "title" %>
+        <%= post.text_field :title, class: "title", class: :edit_title_sub %>
       </div>
     </div>
-    <div class="edit_content">
-      <%= image_tag @post.image %>
+    <div class="edit_con">
+      <div class="edit_image">
+        <%= image_tag @post.image %>
+      </div>
     </div>
-    <div class="edit_content">
-      <%= post.text_area :content, placeholder: "text", rows: "10" %>
+    <div class="edit_con">
+      <div class="edit_text">
+        <%= post.text_area :content, placeholder: "text", rows: "8", class: :edit_text_sub %>
+      </div>
     </div>
-    <div class="edit_content">
-      <%= post.submit "送信する" %>
+    <div class="edit_con">
+      <%= post.submit "送信する", class: :edit_submit %>
     </div>
-    <% end %>
-    
-  </div>
+  <% end %>
 </div>
 
 

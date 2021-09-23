@@ -1,28 +1,35 @@
-<div class="detail_main">
-  <div class="detail_body">
-    <%= @post.title %>
+<div class="detail">
+  <div class="detail_main">
+    <div class="detail_title">
+      <%= @post.title %>
+    </div>
   </div>
-</div>
-<div class="detail_main">
-  <div class="detail_image">
-    <%= image_tag @post.image %>
-      <ul class="more_list">
-        <li>
-          <%= link_to '編集', edit_post_path(@post.id), method: :get, class: :post_btn %>
-        </li>
-        <li>
-          <%= link_to '削除', post_path(@post.id), method: :delete, class: :post_btn %>
-        </li>
-      </ul>
+  <div class="detail_main">
+    <div class="detail_image">
+      <span><%= image_tag @post.image %></span>
+        <ul class="more_list">
+          <li>
+            <%= link_to '編集', edit_post_path(@post.id), method: :get, class: :post_btn %>
+          </li>
+          <li>
+            <%= link_to '削除', post_path(@post.id), method: :delete, class: :post_btn %>
+          </li>
+        </ul>
+    </div>
   </div>
-</div>
-<div class="detail_main">
-  <div class="detail_summary">
-    <%= @post.content %>
+  <div class="detail_main">
+    <div class="detail_summary">
+      <%= @post.content %>
+    </div>
   </div>
-</div>
-<div class="detail_main">
-  <div class="detail_user">
-    <%= link_to "by #{@post.user.nickname}" %>
+  <div class="detail_main">
+    <div class="detail_area">
+      <%= @post.area.name %>
+    </div>
+  </div>
+  <div class="detail_main">
+    <div class="detail_user">
+      <%= link_to "by #{@post.user.nickname}" %>
+    </div>
   </div>
 </div>

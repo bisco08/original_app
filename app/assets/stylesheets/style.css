@@ -1,19 +1,37 @@
 a {
   text-decoration:none; 
+  
 }
+
+
 
 .header {
   display: flex;
-  margin-bottom: 40px;
   padding: 10px 0px;
   justify-content: space-between;
   background-color: rgb(227, 241, 240);
-}
-
-.grid-6 {
-  color: rgb(199, 33, 33);
+  background-image: url(../images/space_image.png);
+  background-size: cover;
+  background-position:30% 65%;
   
 }
+
+.header_btn {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  color: #88fc04;
+  font-style: italic;
+}
+
+.log_btn {
+  color: aliceblue;
+}
+
+.footer_bar {
+  background-color: rgb(8, 8, 8);
+  color: aliceblue;
+  text-align: center;
+}
+
 
 .main {
   position: absolute;
@@ -22,28 +40,29 @@ a {
   width:100%;
   height:700px;    
   background-position:30% 60%;
+  text-align: center;
 }
 
 .second {
   font-size: 40px;
   color: rgb(235, 235, 241);
-  text-align: center
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  color: white;
 }
 
 .second_letter {
   font-size: 25px;
-  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  color: black;
 }
 
 .arrow {
   font-size: 20px;
-  text-align: center;
   font-weight: bold;
 }
 
 .spot {
   font-size: 45px;
-  text-align: center;
   text-decoration: none;
   color: aliceblue;
 }
@@ -51,30 +70,67 @@ a {
 .spot_btn {
   text-decoration: none;
   color: rgb(240, 206, 213);
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  color: rgb(11, 248, 51);
+  margin-left: 40px;
 }
 
 .img_taka {
   width: 50px;
 	height: 40px;
 }
-.post_main {
-  background-color: blue;
+
+.word {
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+  color: black;
+  font-weight: 900;
 }
 
-.post_body {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  font-weight: bold;
-  color: #6091d3;/*文字色*/
-  background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
+/* index */
+.lists_main {
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/soda_image.png); 
+  background-size: cover;                 
+  width:100%;
+  height:100%;    
+  background-position:30% 60%;
+  text-align: center;
 }
 
 .post_title {
-  margin: 0; 
-  padding: 0;
+  padding: 1em;
+  margin: 2em auto;
+  width:10%;
+  color: #000000;
+  background: #fff;
+  border-bottom: solid 5px #9b0000;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  text-align: center 
 }
+
+.post_content {
+  width: 40%;
+  height: 100px;
+  padding: 1em;
+  margin: 2em auto;
+  color: #000000;
+  background: #b4d0ec;
+  border-bottom: solid 6px hsl(210, 76%, 60%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  text-align: center 
+}
+
+
+
+
+
+
+
 
 /*新規登録画面css*/
 
@@ -175,11 +231,11 @@ a {
 /*ログイン画面css*/
 
 .session_main {
-  background-image: url(../images/taki_image.png); 
+  background-image: url(../images/ttt_image.png); 
   background-size: cover;                 
   width:100%;
   height:700px;    
-  background-position:20% 40%;
+  background-position:20% 70%;
   display: flex;
   justify-content: center;
 }
@@ -246,4 +302,125 @@ a {
   color: black;
   font-weight: 900;
 }
+
+.detail {
+  background-image: url(../images/soda_image.png);
+  height: 100vh; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+.detail_main {
+  display: flex;
+  justify-content: center; 
+}
+
+.edit_content {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/nnn_image.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+	height: auto;
+}
+
+.edit_con {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.edit_title_sub {
+  padding: 1em;
+  margin: 2em auto;
+  width:30%;
+  color: #000000;
+  background: #fff;
+  border-bottom: solid 5px #9b0000;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  text-align: center 
+}
+
+.edit_text_sub {
+  width: 300px;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #000000;
+  background: #b4d0ec;
+  border-bottom: solid 6px hsl(210, 76%, 60%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  text-align: center 
+}
+
+
+.edit_submit {
+ 
+}
+
+/*詳細画面css*/
+
+/*新規投稿画面css*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/sakura3_image.png);
+  background-position:20% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.posts-main {
+  text-align: center;
+  margin: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  
+}
+
+.posts-name {
+  padding: 1em;
+  margin: 2em auto;
+  width:100%;
+  color: #595959;
+  background: #fff;
+  border-bottom: solid 5px #9b0000;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.posts-image {
+  padding: 1em;
+  margin: 2em auto;
+  width:100%;
+  color: #595959;
+  background: #fff;
+  border-bottom: solid 5px #9b0000;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.posts-content {
+  padding: 1em;
+  margin: 2em auto;
+  width:100%;
+  color: #595959;
+  background: #fff;
+  border-bottom: solid 5px #9b0000;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  
+}
+
+
+
+
+
+
 
