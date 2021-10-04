@@ -18,7 +18,7 @@
     </div>
     <div class="posts-main"> 
       都道府県<br> 
-      <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"posts-name", id:"item-prefecture"}) %>
+      <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class: :posts_name, id:"item-prefecture"}) %>
     </div>
     <div class="posts-main">  
       <%= f.submit "投稿する" %>

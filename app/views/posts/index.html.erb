@@ -10,7 +10,7 @@
       <div class="post_detail">
         <ul>
           <li>
-            <%= link_to '詳細', post_path(post.id), method: :get %>
+            <%= link_to '詳細', post_path(post.id), method: :get, class: :post_detail_btn %>
           </li>
         </ul>
       </div>
@@ -18,7 +18,8 @@
         <%= post.content %>
       </div>
       <div class="post_nickname">
-        <%= link_to "by #{post.user.nickname}", class: :post_nickname %>
+        <%= link_to "by #{post.user.nickname}" %>
       </div>
     <% end %>
+  </div>
 </div> 
