@@ -33,7 +33,7 @@
 | ------------------ | ----------- | ----------- |
 | text               | text        | null: false |  
 | user               | references  |             |
-| prototype          | references  |             |
+| post               | references  |             |
 
 # Association
 
