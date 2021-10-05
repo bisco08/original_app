@@ -25,7 +25,7 @@
 # Association
 
 - has_many :comments
-- belong_to :user
+- belongs_to :user
 
 # comments テーブル
 
@@ -37,8 +37,8 @@
 
 # Association
 
-- belong_to :user
-- belong_to :post
+- belongs_to :user
+- belongs_to :post
 
 
 
