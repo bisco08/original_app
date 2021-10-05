@@ -44,11 +44,11 @@
  　　
   ![image](https://user-images.githubusercontent.com/88226995/135978046-9165b52c-b0fa-4c40-9ae6-69e0c4ce556f.png)
 　　　　![image](https://user-images.githubusercontent.com/88226995/135978097-1fbdcc92-bca8-4d2e-a179-3322b7773896.png)
-　　　　
+  
   ・新規投稿画面では、現状、タイトル・写真・紹介文・都道府県を記述できるようにしてあります。
-　　　　
+  
   ・全て記入のみ、投稿ボタンを押すと投稿できるようになっております。
-　　　　
+  
   ・今後、記述内容の項目増加、写真を複数枚投稿できるようにしたいと考えております。
 
 　　・投稿一覧　  
