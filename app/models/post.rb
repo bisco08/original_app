@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :area
+  has_many :comments
 
   validates :image, presence: true
   validates :title, presence: true
